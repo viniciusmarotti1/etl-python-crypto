@@ -116,10 +116,10 @@ if __name__ == "__main__":
                 for item in json_data:
                     save_data_postgres(item)
 
-            time.sleep(8 * 60 * 60)
+            time.sleep(8640)
         except KeyboardInterrupt:
             print("\nProcesso interrompido pelo usuário. Finalizando...")
             break
         except Exception as e:
             print(f"Erro durante a execução: {e}")
-            time.sleep(10 * 60)
+            time.sleep(600)
